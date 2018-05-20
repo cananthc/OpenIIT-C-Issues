@@ -1,0 +1,289 @@
+<!--
+
+Project Idea -- May 15th 2018 
+
+Initial Design Started on May 16th 2018 -- v1.0
+	Issues:
+			1. z-index for 
+			FAQ, -- Fixed
+			About, 
+			Contact, 
+			Report Issues, 
+			View Reported Issues
+
+May 17th Issues:
+	1. YouTube video margin, pause -- Fixed
+	2. Map unable to add it on right side -- Fixed
+	3. Empty spaces on the right side  -- Fixed
+	4. z-index Issue from May 16th
+	5. Fix formatting issues when imported into Eclipse  -- Fixed
+	
+May 18th To do 
+	1. YouTube Full screen Issue 
+	1.Table incomplete code/ dynamically generate Table -- Fixed
+	2. Store contents in the DB after fetching values  -- Fixed
+	3. FAQ not aligned properly -- Fixed
+	
+May 19th 
+
+	1. Use JS or php ? -- Fixed
+	2. How to get element id of another HTML page -- Fixed
+	3. localstorage not holding values for a long time
+	4. How to reduce code redundancy
+!--> 
+
+<html id ="html" lang ="eng-US">
+	<head>
+		<title> Open IIT Civic Issues </title>
+		<!--  <link rel="stylessheet" href="Styles.css" type="text/css">-->
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<link rel="import" href="electricity_Issue.html">
+		<link rel="import" href="campusShops_Issue.html">
+		<link rel="import" href="garbage_Issue.html">
+		<link rel="import" href="parks_Issue.html">
+		<link rel="import" href="publicTransport_Issue.html">
+		<link rel="import" href="roads_Issue.html">
+		<link rel="import" href="traffic_Issue.html">
+		<link rel="import" href="trees_Issue.html">
+		<link rel="import" href="water_Issue.html">
+		
+		<script src = "js/Test.js" type="text/javascript" >	
+		</script>
+		
+	</head>
+	
+	
+<body onload = "init()">
+	<!--  <iframe id = "issue" src="Issue_1.html" style="display:none"></iframe> -->
+	
+	
+	<!--  Heading Code !-->
+	<div>
+	<a href = "https://web.iit.edu/" title="Go Hawks!!!">
+	<img src = "Images/hawk.png" name = "Loyal" alt = "Hawk Logo" 
+	width="100" height="100" 
+	onmouseover="imageexpand()" onmouseleave="imagecollapse()">
+	</a>
+	
+	<small id="heading"><strong>Open</strong> </small>
+	<small id ="subheading">IIT-C Issues </small> 
+	</div>
+	
+	
+	<div id = "learnmore">
+	<b> <a style="text-decoration:none;color: #000000" href="#faq"> FAQ</a></b>
+	</div>
+	
+	
+	<div id = "aboutus">
+	<b> <a style="text-decoration:none;color: #000000" href="https://web.iit.edu/about/quick-facts"> About</a></b>
+	</div>
+	
+	
+	<div id = "contact">
+	<b> <a style="text-decoration:none;color: #000000" href="https://web.iit.edu/contact-us"> Contact</a></b>
+	</div>
+	
+	<div id = "reportissue">
+	<a style="text-decoration:none;color: #000000" href = "#report"> <b>Report Issue</b> </a>
+	</div>
+	
+	<div id = "raisedissue">
+	<b>View Raised Issues</b>
+	<hr>
+	</div>
+	
+	<!--  Heading Code Ends!-->
+	
+	
+	
+	<!--  Introduction Code Begins!-->
+	<div id = "intro">
+	<strong>What is Open IIT-C Issues?</strong>
+	</div>
+	
+	<div id ="submenu">
+	<p> Open IIT-C Issues is an initiative taken by IIT-C Students<br> 
+	for addressing civic issues surrounding the campus.	</p>
+	</div>
+	
+	<div id="socialmedia">
+	<p> <strong> Follow us: </strong> <br><br>
+	<img src="Images/fb.png" alt ="FbLogo" width="40" height="20"> 
+	<a style="text-decoration:none;color: #000000 "href="" > Facebook </a> <br>
+	
+	<img src="Images/twitter.png" alt ="FbLogo" width="40" height="20">
+	<a style="text-decoration:none;color: #000000 "href="" > Twitter  </a><br>
+	
+	<img src="Images/insta.png" alt ="FbLogo" width="40" height="20">
+	<a style="text-decoration:none;color: #000000 "href="" > Instagram </a>
+	</div>
+	
+	<div id="video">
+	 <iframe width="760" height="315" src="https://www.youtube.com/embed/BxY_eJLBflk" 
+	  ></iframe>
+	</div>
+
+	<!--  Introduction Code Ends!-->
+
+	<br><br><br><br><br><br><br>
+	<div id="mapheading">
+	<aside>
+	<b><strong>Where are the Issues?</strong></b><br>
+	</aside>
+	</div>
+	
+	<div id="map">
+	<br><br><br>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23778.69526233782!2d-87.63960507551177!3d41.84257464177562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c6f91f0f875%3A0x5feeb3783fd6dab3!2sChicago%2C+IL+60616!5e0!3m2!1sen!2sus!4v1526502768324" 
+	width="560" height="450" style="border:0"></iframe>
+	</div>
+	
+	
+	<!-- Main Contents Starts!-->
+	
+	<div id = "faq"><br><br>
+	<strong>FAQ: </strong>
+	</div>
+	
+	<div id = "ideas">
+	<p>
+	
+	<strong>What do we gain by reporting and tracking issues? </strong><br>
+	<ul>
+	<li>At Illinois Tech we do love and care. </li><br>
+	<li>Our campus is like a beautiful woman. <br>When you do keep her clean, <br>she forgets she is beautiful.</li><br>
+	</ul>
+	
+	
+	<strong>Is any action guaranteed to fix the reported issues?</strong><br>
+	<ul>
+	<li>We hope to get involved in taking action as well.</li>
+	</ul><br>
+	
+	<strong>What is the benefit?</strong><br>
+	<ul>
+	<li>Remember Wikipedia? Google?</li><br>
+	<li>Now imagine something like that for our campus civic issues</li><br>
+	<li>Documenting issues is the first step towards solving them.</li>
+	</ul><br>
+	
+	<strong>How do I benefit, individually?</strong><br>
+	<ul>
+	<li>If you are into such things, we do have Scoreboards.</li>
+	</ul><br>
+	
+	<strong>What kind of issues can be reported?</strong><br>
+	<ul>
+	<li>Roads</li>
+	<li>Water and Sanitation</li>
+	<li>Electricity</li>
+	<li>Garbage</li>
+	<li>Public Transport</li>
+	<li>Traffic</li>
+	<li>Trees</li>
+	<li>Parks and Playgrounds</li>
+	<li>Campus shops</li>
+	</ul><br>
+	</div>
+	
+	<div id="report">
+	<strong>How do I report an issue?</strong><br>
+	<ol>
+		<li> <a style="text-decoration:none;color: #000000" href="" >Message us on Facebook </a> </li>
+		<li> <a style="text-decoration:none;color: #000000" href="" >Tweet to us on @Open IIT-C Issues </a> </li>
+		<li> <a style="text-decoration:none;color: #000000" href="" >Share and mention us on Instagram @OpenIIT-CIssues </a> </li>
+	</ol><br> <br>
+	
+	
+	<form> 
+	<div id="title">
+	<strong>Fill out this form:</strong><br><br>
+	</div>
+	
+	  <fieldset>
+	  <legend><b>Name:</b></legend> <br>
+	  <input type="text" id="fnname" placeholder="Enter your Name" required>	<br><br>
+	  </fieldset><br>
+	  
+	 
+
+	 
+	 <fieldset >
+	 <legend><b>Social Media Link:</b> </legend><br>
+
+	 <input type="text" id="sociallink" placeholder="Enter your Social Media Link" required> <br><br>
+	 </fieldset><br>
+	  
+	  <fieldset >
+	  
+	 <legend><b>Issue Type:</b></legend><br>
+	 <select id="optionval" required>
+		<option value=""disabled selected  hidden></option>
+		<option value="roads">Roads</option>
+		<option value="water">Water and Sanitation</option>
+		<option value="electricity">Electricity</option>
+		<option value="garbage">Garbage</option>
+		<option value="transport">Public Transport</option>
+		<option value="traffic">Traffic</option>
+		<option value="trees">Trees</option>
+		<option value="parks">Parks and Playgrounds</option>
+		<option value="shops">Campus shops</option>
+	 
+	 </select><br><br>
+	 </fieldset><br>
+	 
+	 <fieldset>
+	 <legend><b>Issue Description:</b> </legend><br>
+	 
+	 <textarea rows="4" cols="50" name="comment" id="issuedetails"required></textarea>
+	 </fieldset>
+	 <br><br>
+	 
+	 
+	 <fieldset>
+	 <legend><b>Upload an Image of the Issue</b> </legend><br>
+	 <input type="file" name="pic" id="imagesave" accept="image/*">
+	 </fieldset><br><br>
+	 
+	<button onclick="formResults(); return false" > Submit </button>
+	
+	</form>
+	</div>
+	
+	<br><br><br>
+	
+	<!-- Main Contents Ends!-->
+	
+	<div id="others">
+	<strong><b>What is our motivations?</b></strong><br>
+	<ul>
+	
+	<li>
+	<p>  We are just a group of Scarlet Hawks coming together with an intension to build a community of 
+	like-minded citizens to solve our campus civic issues. </li>
+	<li>
+	<p> We have no affiliations to any political entry.</li>
+	</ul>
+	</div> <br><br>
+	
+	<div id="tablestyle">
+	<table id = "tabledetails" style="width:80%";>
+	<caption> <strong><b>Scoreboards </strong></b></caption>
+<thead> 
+	<tr>
+		<th> Sno </th>
+		<th> Date </th>
+		<th> Name </th>
+		<th> Issue Category </th>
+		<th> Issue Description</th>
+	</tr>
+</thead>
+	</table><br><br><br>
+	</div>
+	
+</body>
+
+
+</html>
